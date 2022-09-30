@@ -8,9 +8,9 @@ http:\/\/httpbin\.org\/post url script-response-body https://raw.githubuserconte
 const responseBody = $response.body;
 const requestBody = $request.body;
 
-console.log('请求体：', requestBody);
-console.log('响应体：', responseBody);
+console.log('请求数据：', requestBody);
+console.log('响应数据：', responseBody);
 
-$notify('重定测试', '测试获取请求体', `# 请求体\n${requestBody}\n\n# 请求体：\n${responseBody}`);
+$notify('重定测试', '测试获取请求体', `# 请求数据\n${requestBody}\n\n# 响应数据：\n${responseBody}`);
 
 $done($response.body);
