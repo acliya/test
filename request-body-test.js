@@ -1,6 +1,8 @@
 /* 
+访问 http://httpbin.org/forms/post 提交表单进行测试。
+
 [rewrite_remote]
-http:\/\/httpbin\.org\/post url script-response-body 
+http:\/\/httpbin\.org\/post url script-response-body https://raw.githubusercontent.com/acliya/test/main/request-body-test.js
 */
 
 const responseBody = $response.body;
